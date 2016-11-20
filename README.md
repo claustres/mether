@@ -8,7 +8,7 @@ A Mether is also a communal or 'Friendship' drinking vessel from the Celtic trad
 
 While the original utility of analogies was generative – producing a model that explained how it works - the analogy is also useful to communicate to new comers or non-developers about the project. 
 
-Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shape the physical world to create his tools. It means that Mether is a stateless infrastructure. 
+Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure. 
 
 ## Basic concepts
 
