@@ -18,7 +18,7 @@ In Mether, atoms are the smallest constituent unit of application that can relia
 
 In Physics, a molecule consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule consists of one or more co-located atoms and can be typically seen as a microservice.
 
-In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system.
+In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system supported by a field of computers.
 
 ## Underlying technologies
 
