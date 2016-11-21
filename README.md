@@ -4,11 +4,13 @@ Mether is a resilient secure distributed application platform using analogies fr
 * Matter, any substance made up of elementary building blocks such as quarks.
 * Ether, a postulated medium for the propagation of non-mechanical interactions.
 
-A Mether is also a communal or 'Friendship' drinking vessel from the Celtic tradition, visitors were formally welcomed in 'peace and friendship' with a mether, just like we want to welcome you to this community.
+A Mether is also a communal or 'Friendship' drinking vessel from the Celtic tradition, visitors were formally welcomed in 'peace and friendship' with a mether, just like we want to welcome you to this community. While the original utility of analogies was generative – producing a model that explained how it works - the analogy is also useful to communicate to new comers or non-developers about the project. 
 
-While the original utility of analogies was generative – producing a model that explained how it works - the analogy is also useful to communicate to new comers or non-developers about the project. 
+## Objectives
 
-Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure. 
+Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. This means that each time the state of the infrastructure changes the application configuration needs to be updated, leading to what is commonly refered as the "configuration hell".
+
+Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal. 
 
 ## Basic concepts
 
