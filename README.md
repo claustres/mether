@@ -10,19 +10,19 @@ A Mether is also a communal or 'Friendship' drinking vessel from the Celtic trad
 
 Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. This means that each time the state of the infrastructure changes the application configuration needs to be updated, leading to what is commonly refered as the "configuration hell".
 
-Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal. 
+Mether provides a new paradigm where the application "shapes" the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale acording to application requirements. 
 
 ## Basic concepts
 
 In Physics, a quark is an elementary particle and a fundamental constituent of matter. In Mether, a quark is an elementary chunk of data and a fundamental constituent of information. Like in Physics, there are different types of quarks known as flavors. Flavors are non-hierarchical metadata assigned to a piece of information, like tags or labels, and allows a quark to be described and found again by searching. Quark content addressing is based on cryptographic-hashes allowing integrity checking and providing wide, secure, trustless exchanges of data. 
 
-In Physics, a hadron is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadron and manipulated as a batch.
+In Physics, a hadron is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadrons and manipulated as a batch.
 
 In Mether, atoms are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers. 
 
 In Physics, a molecule consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule consists of one or more co-located atoms and can be typically seen as a microservice.
 
-In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message topics do exist for exchanges between each type of constituent.
+In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message topics do exist for exchanges between each type of constituent at each scale.
 
 ## Candidate underlying technologies
 
