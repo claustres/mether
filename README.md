@@ -29,6 +29,7 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 * Distributed data storage to support Matter like
  * https://ipfs.io/
  * https://github.com/datproject/dat
+ * https://github.com/mafintosh/hyperdrive
  * https://github.com/bigchaindb/bigchaindb
  * https://github.com/haadcode/orbit-db
  * http://orientdb.com/
