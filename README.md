@@ -16,11 +16,13 @@ Mether provides a new paradigm where the application "shapes" the infrastructure
 
 In Physics, a quark is an elementary particle and a fundamental constituent of matter. In Mether, a quark is an elementary chunk of data and a fundamental constituent of information. Like in Physics, there are different types of quarks known as flavors. Flavors are non-hierarchical metadata assigned to a piece of information, like tags or labels, and allows a quark to be described and found again by searching. Quark content addressing is based on cryptographic-hashes allowing integrity checking and providing wide, secure, trustless exchanges of data. 
 
+In Physics, a hadron is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadron and manipulated as a batch.
+
 In Mether, atoms are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers. 
 
 In Physics, a molecule consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule consists of one or more co-located atoms and can be typically seen as a microservice.
 
-In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system supported by a field of computers.
+In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a serverless messaging system supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message topics do exist for exchanges between each type of constituent.
 
 ## Candidate underlying technologies
 
@@ -29,9 +31,11 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
  * https://github.com/datproject/dat
  * https://github.com/bigchaindb/bigchaindb
  * https://github.com/haadcode/orbit-db
+ * http://orientdb.com/
 * Distributed messaging to support Ether like
  * http://kafka.apache.org/
  * http://nsq.io/
+ * https://github.com/edwardchoh/zmqbus-node
 * Container manager to support Atoms like
  * https://www.docker.com/ 
  * http://kubernetes.io/
