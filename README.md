@@ -8,9 +8,9 @@ A Mether is also a communal or *Friendship* drinking vessel from the Celtic trad
 
 ## Objectives
 
-Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. This means that each time the state of the infrastructure changes the application configuration needs to be updated, leading to what is commonly refered as the *configuration hell*.
+Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. This means that each time the state of the infrastructure changes the application configuration needs to be updated, leading to what is commonly refered as the *configuration hell*. Indeed, from the point of view of the application developer the infrastructure details such as IP addresses, network connectivity, discovery, messaginig, etc. should be hidden and the deployment experience should be portable.
 
-Mether provides a new paradigm where the application *shapes* the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale acording to application requirements. 
+Mether provides a new paradigm where the application *shapes* the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale according to application requirements. Hiding how infrastructure achieved this behind a simple API, we believe resilient applications should be built and distributed more easily. 
 
 ## Basic concepts
 
