@@ -12,6 +12,12 @@ Usually, applications are designed to be deployed knowing the state of the under
 
 Mether provides a new paradigm where the application *shapes* the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale according to application requirements. Hiding how infrastructure achieved this behind a simple API, we believe resilient applications should be built and distributed more easily. 
 
+Resilience is the conjunction of different factors that can be seen as guidelines :
+* Open Source components
+* Node diversity (e.g. geographic, jurisdictional, operating systems, etc.)
+* Data integrity
+* Stealth infrastructure (no identifiable topology)
+
 ## Basic concepts
 
 In Physics, a *quark* is an elementary particle and a fundamental constituent of matter. In Mether, a quark is an elementary chunk of data and a fundamental constituent of information. Like in Physics, there are different types of quarks known as flavors. Flavors are non-hierarchical metadata assigned to a piece of information, like tags or labels, and allows a quark to be described and found again by searching. Quark content addressing is based on cryptographic-hashes allowing integrity checking and providing wide, secure, trustless exchanges of data. 
