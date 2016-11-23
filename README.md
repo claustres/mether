@@ -1,4 +1,4 @@
-# Mether
+# ![Mether Logo](./mether.png =128) Mether
 
 Mether is a resilient secure distributed application platform using analogies from physics, hence the name created from :
 * Matter, any substance made up of elementary building blocks such as quarks.
