@@ -32,7 +32,7 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 
 ## Working with Mether
 
-The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure and the [JSON-RPC](http://www.jsonrpc.org/specification protocol). 
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to the [JSON-RPC](http://www.jsonrpc.org/specification) protocol. 
 
 ### Working with quarks
 
