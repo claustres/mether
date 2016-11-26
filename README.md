@@ -30,6 +30,40 @@ In Physics, a *molecule* consists of a stable system composed of two or more ato
 
 In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a *serverless messaging system* supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message exchanges do exist between each type of constituent at each scale.
 
+## Working with Mether
+
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure and the [JSON-RPC](http://www.jsonrpc.org/specification protocol). 
+
+### Working with quarks
+
+Create request message
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "create",
+  "params": {
+    "path": 'file/path',
+    "content": {
+      }
+   },
+   "id": id
+}
+```
+Create response message
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "hash": 'xxx',
+   },
+   "id": id
+}
+```
+
+### Working with atoms
+
+
+
 ## Candidate underlying technologies
 
 * Distributed data storage to support Matter like
