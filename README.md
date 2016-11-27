@@ -26,13 +26,18 @@ In Physics, a *hadron* is a composite particle made of quarks held together. In 
 
 In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers. 
 
-In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule consists of one or more co-located atoms and can be typically seen as a microservice.
+In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule compose several existing fine-grained components into a single higher order composite element, which can be typically seen as a microservice, in order to achieve the appropriate "granularity" while promoting reuse and manageability of the underlying components.
 
 In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a *serverless messaging system* supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message exchanges do exist between each type of constituent at each scale.
 
 ## Working with Mether
 
-The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to the [JSON-RPC](http://www.jsonrpc.org/specification) protocol. 
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to the [JSON-RPC](http://www.jsonrpc.org/specification) protocol. Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). 
+
+Application requirements with regard to the infrastructure are expressed using a Metherfile. At startup this file is converted into a set of command messages in order to :
+* create the quarks required by each atom
+* create the atoms required by the molecule
+* create the molecules required by the application
 
 ### Working with quarks
 
@@ -62,7 +67,27 @@ Create response message
 
 ### Working with atoms
 
-
+Create request message
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "create",
+  "params": {
+    
+   },
+   "id": id
+}
+```
+Create response message
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "hash": 'xxx',
+   },
+   "id": id
+}
+```
 
 ## Candidate underlying technologies
 
