@@ -32,62 +32,12 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 
 ## Working with Mether
 
-The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to the [JSON-RPC](http://www.jsonrpc.org/specification) protocol. Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). 
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlyign technologies (e.g. container engine or database).
 
 Application requirements with regard to the infrastructure are expressed using a Metherfile. At startup this file is converted into a set of command messages in order to :
-* create the quarks required by each atom
-* create the atoms required by the molecule
-* create the molecules required by the application
-
-### Working with quarks
-
-Create request message
-```json
-{
-  "jsonrpc": "2.0",
-  "method": "create",
-  "params": {
-    "path": 'file/path',
-    "content": {
-      }
-   },
-   "id": id
-}
-```
-Create response message
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "hash": 'xxx',
-   },
-   "id": id
-}
-```
-
-### Working with atoms
-
-Create request message
-```json
-{
-  "jsonrpc": "2.0",
-  "method": "create",
-  "params": {
-    
-   },
-   "id": id
-}
-```
-Create response message
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "hash": 'xxx',
-   },
-   "id": id
-}
-```
+* create the quarks required by each atom (a.k.a. container images)
+* create the atoms required by the molecules (a.k.a. container instances)
+* create the molecules required by the application (a.k.a. microservices)
 
 ## Candidate underlying technologies
 
