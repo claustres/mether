@@ -26,7 +26,7 @@ In Physics, a *hadron* is a composite particle made of quarks held together. In 
 
 In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers. 
 
-In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule compose several existing fine-grained components into a single higher order composite element, which can be typically seen as a microservice, in order to achieve the appropriate "granularity" while promoting reuse and manageability of the underlying components.
+In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule composes several existing fine-grained components into a single higher order composite element, which can be typically seen as a microservice, in order to achieve the appropriate "granularity" while promoting reuse and manageability of the underlying components.
 
 In Physics, atoms interact, form molecules, and manifest further properties through interactions and force carriers or messenger particles of underlying fields. In Mether, application components interact through a *serverless messaging system* supported by a field of computers. In Physics, different exchange forces do exist e.g. the color force for quarks, the strong force for hadrons, the electromagnetic force for atoms and molecules. In Mether different built-in message exchanges do exist between each type of constituent at each scale.
 
