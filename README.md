@@ -43,6 +43,34 @@ Every molecule (i.e. application)  expresses its requirements with regard to the
 * download the modified quarks required by each atom (a.k.a. container images),
 * create the atoms required by the molecule (a.k.a. container instances or microservices).
 
+Example `Metherfile.json` file is given hereafter:
+```json
+{
+ "hash": "1TaLkFrMwvbNsooF4ioKAY9EuxTBTjipT",
+ "name": "MyMolecule",
+ "description": "Decentralized application with Mether",
+ "atoms": {
+  "webapp": {
+   "hash": "1baeab2b22dca59d434800b5ffcbcf470520dc7f2eee7ee4a0a7ebc7e87468ef",
+   "size": 1073741824,
+   "replicas": 2
+  },
+  "database": {
+   "hash": "c1642cc2922a74c3e74991f0194e2acc46dc5e003207a0028dad63c75c41a0ec",
+   "size": 1073741825
+  }
+ },
+ "modified": 1479332094.372,
+ "signers": [
+  "HG/6ljsXbej7laqD3JUGsa8IEgSGE+NZs2jg9reQ3vrlo0fTnoFESCNujVxRuY1ORor143LGSyjl8PkaRdU4gx8="
+  ],
+ "signs": [
+  "HOHLv0kUdd3iEacj6658ILDxB0hpS5ND/g1Z8JSXusl+QelydhZpINcEra61qNpsTBxqxpleE7tbkqG1J59YhZo="
+ ],
+ "mether_version": "0.5.0"
+}
+```
+
 ## Candidate underlying technologies
 
 * Distributed data storage to support Matter like
