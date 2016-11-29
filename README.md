@@ -16,7 +16,7 @@ Resilience is the conjunction of different factors that can be seen as guideline
 * Open Source components
 * Node diversity (e.g. geographic, jurisdictional, operating systems, etc.)
 * Data integrity
-* Stealth infrastructure (no identifiable topology)
+* Stealth (no identifiable point of failure and topology)
 
 ## Basic concepts
 
