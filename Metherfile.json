@@ -6,7 +6,7 @@
   "webapp": {
    "hash": "1baeab2b22dca59d434800b5ffcbcf470520dc7f2eee7ee4a0a7ebc7e87468ef",
    "size": 1073741824,
-   replicas: 2
+   "replicas": 2
   },
   "database": {
    "hash": "c1642cc2922a74c3e74991f0194e2acc46dc5e003207a0028dad63c75c41a0ec",
