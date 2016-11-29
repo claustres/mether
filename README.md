@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/claustres/mether/master/mether.png" width="56" height="44" /> Mether
+# <img src="https://raw.githubusercontent.com/claustres/mether/master/mether.png" width="54" height="44" /> Mether
 
 Mether is a resilient secure distributed application platform using analogies from physics, hence the name created from :
 * Matter, any substance made up of elementary building blocks such as quarks.
@@ -10,7 +10,7 @@ A Mether is also a communal or *Friendship* drinking vessel from the Celtic trad
 
 Usually, applications are designed to be deployed knowing the state of the underlying infrastructure. This means that each time the state of the infrastructure changes the application configuration needs to be updated, leading to what is commonly refered as the *configuration hell*. Indeed, from the point of view of the application developer the infrastructure details such as IP addresses, network connectivity, discovery, messaging, etc. should be hidden and the deployment experience should be portable.
 
-Mether provides a new paradigm where the application *shapes* the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale according to application requirements. Mether can be seen as an **Infrastructure over Infrastructure (IoI)** because it creates a *private infrastructure* for your application *inside* an existing infrastructure. Hiding how infrastructure achieved this behind a simple API, we believe resilient applications should be built and distributed more easily.
+Mether provides a new paradigm where the application *shapes* the infrastructure as required just like a man shapes the physical world to create his tools. It means that Mether is a stateless infrastructure that auto-detect, auto-configure, auto-respond, auto-heal, auto-scale according to application requirements. Mether can be seen as an **Infrastructure over Infrastructure (IoI)** because it creates a *virtual private infrastructure* for your application *inside* an existing infrastructure. Hiding how infrastructure achieved this behind a simple API, we believe resilient applications should be built and distributed more easily.
 
 Resilience is the conjunction of different factors that can be seen as guidelines :
 * Open Source components
@@ -24,7 +24,7 @@ In Physics, a *quark* is an elementary particle and a fundamental constituent of
 
 In Physics, a *hadron* is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadrons and manipulated as a batch. Hadrons are created using non-hierarchical metadata assigned to a piece of information, like tags or labels, which allows a data to be described and found again by searching. 
 
-In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers or micro-services. 
+In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers or micro-services. The ability of atoms to associate and dissociate is responsible for most of the physical changes observed in nature, and is the subject of the discipline of chemistry.
 
 In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule composes several existing fine-grained components into a single higher order composite element, which can be typically seen as an application, in order to achieve the appropriate "granularity" while promoting reuse and manageability of the underlying components.
 
@@ -33,6 +33,11 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 ## Working with Mether
 
 The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlyign technologies (e.g. container engine or database).
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/claustres/mether/master/Mether-Messaging.png"/>
+*How messaging works between a molecule and the infrastructure to reach an atom*
+</p>
 
 Every molecule (i.e. application)  expresses its requirements with regard to the infrastructure with a `Metherfile.json` file which holds all required quarks in a hash and a signature generated using the molecule owner's private key. If the molecule owner (who has the private key for the molecule hash) modifies the molecule, then he/she signs a new `Metherfile.json` and publishes it to the infrastructure. Afterwards, the infrastructure verifies the `Metherfile.json` integrity (using the signature) and convert it into a set of command messages in order to :
 * download the modified quarks required by each atom (a.k.a. container images),
