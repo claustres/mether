@@ -32,7 +32,7 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 
 ## Working with Mether
 
-The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlyign technologies (e.g. container engine or database).
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlyign technologies (e.g. container engine or database). It acts as a proxy and a load balancer for all requests/responses between the molecule and underlying atoms.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/claustres/mether/master/Mether-Messaging.png"/>
