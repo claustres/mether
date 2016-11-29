@@ -20,7 +20,7 @@ Resilience is the conjunction of different factors that can be seen as guideline
 
 ## Basic concepts
 
-In Physics, a *quark* is an elementary particle and a fundamental constituent of matter. In Mether, a quark is an elementary chunk of data and a fundamental constituent of information. Like in Physics, there are different types of quarks known as flavors. Quark content addressing is based on cryptographic-hashes allowing integrity checking and providing wide, secure, trustless exchanges of data. 
+In Physics, a *quark* is an elementary particle and a fundamental constituent of matter. In Mether, a quark is an elementary chunk of data and a fundamental constituent of information. Like in Physics, there are different types of quarks known as flavors : files, events, logs, etc. Quark content addressing is based on cryptographic-hashes allowing integrity checking and providing wide, secure, trustless exchanges of data. 
 
 In Physics, a *hadron* is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadrons and manipulated as a batch. Hadrons are created using non-hierarchical metadata assigned to a piece of information, like tags or labels, which allows a data to be described and found again by searching. 
 
@@ -36,7 +36,7 @@ The implementation of Mether is based on a message-oriented middleware used by t
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/claustres/mether/master/Mether-Messaging.png"/>
-*How messaging works between a molecule and the infrastructure to reach an atom*
+<i>How messaging works between a molecule and the infrastructure to reach an atom</i>
 </p>
 
 Every molecule (i.e. application)  expresses its requirements with regard to the infrastructure with a `Metherfile.json` file which holds all required quarks in a hash and a signature generated using the molecule owner's private key. If the molecule owner (who has the private key for the molecule hash) modifies the molecule, then he/she signs a new `Metherfile.json` and publishes it to the infrastructure. Afterwards, the infrastructure verifies the `Metherfile.json` integrity (using the signature) and convert it into a set of command messages in order to :
