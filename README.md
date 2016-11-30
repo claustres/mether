@@ -32,7 +32,7 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 
 ## Working with Mether
 
-The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlyign technologies (e.g. container engine or database). It acts as a proxy and a load balancer for all requests/responses between the molecule and underlying atoms.
+The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlying technologies (e.g. container engine or database). It acts as a proxy and a load balancer for all requests/responses between the molecule and underlying atoms.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/claustres/mether/master/Mether-Messaging.png"/>
@@ -71,6 +71,11 @@ Example `Metherfile.json` file is given hereafter:
 }
 ```
 
+Once deployed to the infrastructure by the Mether CLI you will be able to reach your application entry point using
+  `http://127.0.0.1:3003/{molecule_hash}` (eg.
+  `http://127.0.0.1:3003/1TaLkFrMwvbNsooF4ioKAY9EuxTBTjipT`).
+Mether also provide an hybrid Mobile or Desktop client.
+
 ## Candidate underlying technologies
 
 * Distributed data storage to support Matter like
@@ -87,6 +92,8 @@ Example `Metherfile.json` file is given hereafter:
 * Container manager to support Atoms like
  * https://www.docker.com/ 
  * http://kubernetes.io/
+* Distributed internet as inspiration
+ * https://github.com/HelloZeroNet/ZeroNet
 
 
 
