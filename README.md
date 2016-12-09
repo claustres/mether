@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/claustres/mether/master/mether.png" width="54" height="44" /> Mether
+# <img src="https://gitlab.com/luc.claustres/mether/blob/master/mether.png" width="54" height="44" /> Mether
 
 Mether is a resilient secure distributed application platform using analogies from physics, hence the name created from :
 * Matter, any substance made up of elementary building blocks such as quarks.
