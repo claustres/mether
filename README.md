@@ -24,7 +24,7 @@ In Physics, a *quark* is an elementary particle and a fundamental constituent of
 
 In Physics, a *hadron* is a composite particle made of quarks held together. In Mether, quarks can similarly be grouped in hadrons and manipulated as a batch. Hadrons are created using non-hierarchical metadata assigned to a piece of information, like tags or labels, which allows a data to be described and found again by searching. 
 
-In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers or micro-services. The ability of atoms to associate and dissociate is responsible for most of the physical changes observed in nature, and is the subject of the discipline of chemistry.
+In Mether, *atoms* are the smallest constituent unit of application functions that can reliably be moved from one computing environment to another, a.k.a. containers, functions or micro-services. The ability of atoms to associate and dissociate is responsible for most of the physical changes observed in nature, and is the subject of the discipline of chemistry.
 
 In Physics, a *molecule* consists of a stable system composed of two or more atoms exhibing specific properties. In Mether, molecules adds a higher level of abstraction to atoms, which are containerized components. A molecule composes several existing fine-grained components into a single higher order composite element, which can be typically seen as an application, in order to achieve the appropriate "granularity" while promoting reuse and manageability of the underlying components.
 
@@ -75,6 +75,10 @@ Once deployed to the infrastructure by the Mether CLI you will be able to reach 
   `http://127.0.0.1:3003/{molecule_hash}` (eg.
   `http://127.0.0.1:3003/1TaLkFrMwvbNsooF4ioKAY9EuxTBTjipT`).
 Mether also provide an hybrid Mobile or Desktop client.
+
+The molecule acts as a local proxy talking for you to the infrastructure so that there is no identifiable entry point such as domain names.
+
+In Mether, just like in nature, anything has a TTL (Time-To-Live) so that atom desappear form the infrastructure when no longer required and pop up when required again. 
 
 ## Candidate underlying technologies
 
