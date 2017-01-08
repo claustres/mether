@@ -1,4 +1,4 @@
-# <img src="https://gitlab.com/luc.claustres/mether/blob/master/mether.png" width="54" height="44" /> Mether
+# <img src="mether.png" width="54" height="44" /> Mether
 
 Mether is a resilient secure distributed application platform using analogies from physics, hence the name created from :
 * Matter, any substance made up of elementary building blocks such as quarks.
@@ -35,7 +35,7 @@ In Physics, atoms interact, form molecules, and manifest further properties thro
 The implementation of Mether is based on a message-oriented middleware used by the application to send commands to the infrastructure thanks to a simple protocol similar to [JSON-RPC](http://www.jsonrpc.org/specification). Then, the infrastructure ensures the transport protocol negotiation between the multiple formats supported by atoms (such as HTTP or JDBC). Mether is designed to avoid unecessary layers so that the parameters of the messages are directly formatted according to what is required by the underlying technologies (e.g. container engine or database). It acts as a proxy and a load balancer for all requests/responses between the molecule and underlying atoms.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/claustres/mether/master/Mether-Messaging.png"/>
+<img src="Mether-Messaging.png"/>
 <i>How messaging works between a molecule and the infrastructure to reach an atom</i>
 </p>
 
