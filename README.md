@@ -87,10 +87,11 @@ In Mether, just like in nature, anything has a TTL (Time-To-Live) so that atom d
  * https://github.com/datproject/dat
  * https://github.com/mafintosh/hyperdrive
  * https://github.com/bigchaindb/bigchaindb
- * https://github.com/haadcode/orbit-db
+ * https://github.com/arangodb/arangodb
  * http://orientdb.com/
 * Distributed messaging to support Ether like
  * http://kafka.apache.org/
+ * https://nats.io/
  * http://nsq.io/
  * https://github.com/edwardchoh/zmqbus-node
 * Container manager to support Atoms like
