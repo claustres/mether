@@ -83,22 +83,22 @@ In Mether, just like in nature, anything has a TTL (Time-To-Live) so that atom d
 ## Candidate underlying technologies
 
 * Distributed data storage to support Matter like
- * https://ipfs.io/
- * https://github.com/datproject/dat
- * https://github.com/mafintosh/hyperdrive
- * https://github.com/bigchaindb/bigchaindb
- * https://github.com/arangodb/arangodb
- * http://orientdb.com/
+  * https://ipfs.io/
+  * https://github.com/datproject/dat
+  * https://github.com/mafintosh/hyperdrive
+  * https://github.com/bigchaindb/bigchaindb
+  * https://github.com/arangodb/arangodb
+  * http://orientdb.com/
 * Distributed messaging to support Ether like
- * http://kafka.apache.org/
- * https://nats.io/
- * http://nsq.io/
- * https://github.com/edwardchoh/zmqbus-node
+  * http://kafka.apache.org/
+  * https://nats.io/
+  * http://nsq.io/
+  * https://github.com/edwardchoh/zmqbus-node
 * Container manager to support Atoms like
- * https://www.docker.com/ 
- * http://kubernetes.io/
+  * https://www.docker.com/ 
+  * http://kubernetes.io/
 * Distributed internet as inspiration
- * https://github.com/HelloZeroNet/ZeroNet
+  * https://github.com/HelloZeroNet/ZeroNet
 
 
 
